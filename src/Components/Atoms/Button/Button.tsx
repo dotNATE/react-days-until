@@ -3,7 +3,6 @@ import React from "react"
 type ButtonProps = {
     date: Date,
     content: string,
-    children: any,
     clicker: any
 }
 

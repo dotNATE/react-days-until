@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import DaysUntilApp from "./Components/DaysUntilApp";
+import DaysUntilApp from "./Components/Organisms/DaysUntilApp";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
