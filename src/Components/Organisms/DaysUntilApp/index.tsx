@@ -19,9 +19,9 @@ const DaysUntilApp = () => {
         <React.StrictMode>
             <Header1 content={ "There are " + getDaysUntil(selectedDate) + " days until " + selectedDateString } />
             <DateButtonsBox>
-                <Button date={new Date(2021, 12, 25)} content="Christmas" clicker={ handleClick } />
-                <Button date={new Date(2022, 1, 1)} content="New Years Day" clicker={ handleClick } />
-                <Button date={new Date(2022, 2, 14)} content="Valentines Day" clicker={ handleClick } />
+                <Button date={new Date(2021, 11, 25)} content="Christmas" clicker={ handleClick } />
+                <Button date={new Date(2022, 0, 1)} content="New Years Day" clicker={ handleClick } />
+                <Button date={new Date(2022, 1, 14)} content="Valentines Day" clicker={ handleClick } />
             </DateButtonsBox>
         </React.StrictMode>
     )
