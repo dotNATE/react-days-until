@@ -1,0 +1,26 @@
+button {
+    background-color: rgb(75, 215, 209);
+    border: 2px solid rgb(31, 83, 81);
+    border-radius: 5px;
+    height: 3rem;
+    width: 10rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: .8;
+    transition-property: opacity, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 150ms;
+}
+
+button:hover,
+button:focus,
+button:focus-within,
+button:focus-visible {
+    outline: none;
+    opacity: 1;
+}
+
+button:active {
+    background-color: rgb(157, 252, 247);
+}

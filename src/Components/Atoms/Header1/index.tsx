@@ -1,4 +1,5 @@
 import React from "react"
+import './Header1.css'
 
 type Header1Props  = {
     content: string
