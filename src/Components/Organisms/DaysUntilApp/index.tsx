@@ -4,6 +4,8 @@ import Header1 from "../../Atoms/Header1"
 import DateButtonsBox from "../../Molecules/DateButtonsBox"
 import Button from "../../Atoms/Button/Button"
 
+import getDaysUntil from "../../../Functions/getDaysUntil";
+
 const DaysUntilApp = () => {
     const [selectedDate, setSelectedDate] = useState(new Date())
     const [selectedDateString, setSelectedDateString] = useState("Today")
@@ -15,9 +17,11 @@ const DaysUntilApp = () => {
 
     return (
         <React.StrictMode>
-            <Header1 content={ "There are " + selectedDate + " days until " + selectedDateString } />
+            <Header1 content={ "There are " + getDaysUntil(selectedDate) + " days until " + selectedDateString } />
             <DateButtonsBox>
                 <Button date={new Date(2021, 12, 25)} content="Christmas" clicker={ handleClick } />
+                <Button date={new Date(2022, 1, 1)} content="New Years Day" clicker={ handleClick } />
+                <Button date={new Date(2022, 2, 14)} content="Valentines Day" clicker={ handleClick } />
             </DateButtonsBox>
         </React.StrictMode>
     )
