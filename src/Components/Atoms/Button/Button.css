@@ -13,11 +13,8 @@ button {
     transition-duration: 150ms;
 }
 
-button:hover,
-button:focus,
-button:focus-within,
-button:focus-visible {
-    outline: none;
+button:hover {
+    outline:none;
     opacity: 1;
 }
 
