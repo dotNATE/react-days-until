@@ -7,8 +7,8 @@ import Button from "../../Atoms/Button/Button"
 import getDaysUntil from "../../../Functions/getDaysUntil";
 
 const DaysUntilApp = () => {
-    const [selectedDate, setSelectedDate] = useState(new Date())
-    const [selectedDateString, setSelectedDateString] = useState("Today")
+    const [selectedDate, setSelectedDate] = useState(new Date(2021, 5, 21))
+    const [selectedDateString, setSelectedDateString] = useState("Nathaniel can start at Sysdoc!")
 
     const handleClick = (date: Date, dateString: string): void => {
         setSelectedDate(date)
