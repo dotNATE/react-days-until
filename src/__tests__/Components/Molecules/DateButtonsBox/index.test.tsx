@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 
 import DateButtonsBox from "../../../../Components/Molecules/DateButtonsBox";
-import Button from "../../../../Components/Atoms/Button/Button";
+import Button from "../../../../Components/Atoms/Button";
 
 it('renders dateButtonsBox children', () => {
     render(

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import Header1 from "../../Atoms/Header1"
 import DateButtonsBox from "../../Molecules/DateButtonsBox"
-import Button from "../../Atoms/Button/Button"
+import Button from "../../Atoms/Button"
 
 import getDaysUntil from "../../../Functions/getDaysUntil";
 import Sidebar from "../../Molecules/Sidebar";
