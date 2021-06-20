@@ -24,7 +24,7 @@ const DaysUntilApp = () => {
         {
             name: 'xmas',
             label: 'UK 2022 Bank Holidays',
-            date: new Date(2022, 1, 14),
+            date: new Date(2022, 0, 1),
             dates: [
                 { name: 'new-years-day-bh', label: 'New Years Day', date: new Date(2022, 0, 1) },
                 { name: 'good-fri-bh', label: 'Good Friday', date: new Date(2022, 3, 15) },
