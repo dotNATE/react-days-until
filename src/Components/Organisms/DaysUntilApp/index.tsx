@@ -15,6 +15,35 @@ const DaysUntilApp = () => {
         setSelectedDateString(dateString)
     }
 
+    const dates = [
+        { name: 'xmas', label: 'Christmas', date: new Date(2021, 11, 25) },
+        { name: 'new-years-day', label: 'New Years Day', date: new Date(2022, 0, 1) },
+        { name: 'valentines-day', label: 'Valentines Day', date: new Date(2022, 1, 14) },
+        {
+            name: 'xmas',
+            label: 'UK 2022 Bank Holidays',
+            date: new Date(2022, 1, 14),
+            dates: [
+                { name: 'new-years-day-bh', label: 'New Years Day', date: new Date(2022, 0, 1) },
+                { name: 'good-fri-bh', label: 'Good Friday', date: new Date(2022, 3, 15) },
+                { name: 'easter-bh', label: 'Easter Monday', date: new Date(2022, 3,18) },
+                { name: 'may-bh', label: 'Early May Bank Holiday', date: new Date(2022, 4, 2) },
+                { name: 'spring-bh', label: 'Spring Bank Holiday', date: new Date(2022, 5, 2) },
+                { name: 'jubilee-bh', label: 'Platinum Jubilee Bank Holiday', date: new Date(2022, 5, 3) },
+                { name: 'summer-bh', label: 'Summer Bank Holiday', date: new Date(2022, 7, 29) },
+                {
+                    name: 'xmas',
+                    label: 'Christmas 2022',
+                    date: new Date(2022, 11, 25),
+                    dates: [
+                        { name: 'boxing-day-bh', label: 'Boxing Day', date: new Date(2022, 11, 26) },
+                        { name: 'xmas-bh', label: 'Christmas Bank Holiday', date: new Date(2022, 11, 27) }
+                    ]
+                },
+            ]
+        },
+    ]
+
     return (
         <React.StrictMode>
             <Header1 content={ "There are " + getDaysUntil(selectedDate) + " days until " + selectedDateString } />
