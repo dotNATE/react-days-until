@@ -6,6 +6,7 @@ import Button from "../../Atoms/Button/Button"
 
 import getDaysUntil from "../../../Functions/getDaysUntil";
 import Sidebar from "../../Molecules/Sidebar";
+import StyleMinWidth70ch from "../../Styles/MinWidth/70ch";
 
 const DaysUntilApp = () => {
     const [selectedDate, setSelectedDate] = useState(new Date(2021, 5, 21))
@@ -47,12 +48,14 @@ const DaysUntilApp = () => {
 
     return (
         <React.StrictMode>
-            <Header1 content={ "There are " + getDaysUntil(selectedDate) + " days until " + selectedDateString } />
-            <DateButtonsBox>
-                <Button date={new Date(2021, 11, 25)} content="Christmas" clicker={ handleClick } />
-                <Button date={new Date(2022, 0, 1)} content="New Years Day" clicker={ handleClick } />
-                <Button date={new Date(2022, 1, 14)} content="Valentines Day" clicker={ handleClick } />
-            </DateButtonsBox>
+            <StyleMinWidth70ch>
+                <Header1 content={ "There are " + getDaysUntil(selectedDate) + " days until " + selectedDateString } />
+                <DateButtonsBox>
+                    <Button date={new Date(2021, 11, 25)} content="Christmas" clicker={ handleClick } />
+                    <Button date={new Date(2022, 0, 1)} content="New Years Day" clicker={ handleClick } />
+                    <Button date={new Date(2022, 1, 14)} content="Valentines Day" clicker={ handleClick } />
+                </DateButtonsBox>
+            </StyleMinWidth70ch>
             <Sidebar dates={ dates } clicker={ handleClick } />
         </React.StrictMode>
     )
