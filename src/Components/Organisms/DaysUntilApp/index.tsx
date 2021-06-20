@@ -9,8 +9,8 @@ import Sidebar from "../../Molecules/Sidebar";
 import StyleMinWidth from "../../Styles/MinWidth";
 
 const DaysUntilApp = () => {
-    const [selectedDate, setSelectedDate] = useState(new Date(2021, 5, 21))
-    const [selectedDateString, setSelectedDateString] = useState("Nathaniel can start at Sysdoc!")
+    const [selectedDate, setSelectedDate] = useState(new Date())
+    const [selectedDateString, setSelectedDateString] = useState("Today!")
 
     const handleClick = (date: Date, dateString: string): void => {
         setSelectedDate(date)
@@ -44,6 +44,7 @@ const DaysUntilApp = () => {
                 },
             ]
         },
+        { name: 'cheeky-hint', label: "Nathaniel's Sysdoc start date?", date: new Date(2021, 5, 28) },
     ]
 
     return (
