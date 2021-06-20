@@ -20,8 +20,8 @@ type SidebarItemProps = {
 
 const SidebarItem = ({label, clicker, date, dates: subDates}: SidebarItemProps): JSX.Element => (
     <>
-    <ListItem>
-        <ListItemText label={ label } clicker={ () => clicker(date, label) } date={ date } />
+    <ListItem label={ label } date={ date } clicker={ () => clicker(date, label) }>
+        <ListItemText label={ label } />
     </ListItem>
         {
             Array.isArray(subDates) ? (
