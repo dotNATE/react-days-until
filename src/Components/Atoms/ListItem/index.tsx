@@ -6,7 +6,7 @@ type ListItemProps = {
 }
 
 const ListItem = ({ children }: ListItemProps): JSX.Element => (
-    <li>
+    <li className='listItem'>
         { children }
     </li>
 )
