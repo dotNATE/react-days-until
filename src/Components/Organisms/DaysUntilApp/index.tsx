@@ -5,6 +5,7 @@ import DateButtonsBox from "../../Molecules/DateButtonsBox"
 import Button from "../../Atoms/Button/Button"
 
 import getDaysUntil from "../../../Functions/getDaysUntil";
+import Sidebar from "../../Molecules/Sidebar";
 
 const DaysUntilApp = () => {
     const [selectedDate, setSelectedDate] = useState(new Date(2021, 5, 21))
@@ -52,6 +53,7 @@ const DaysUntilApp = () => {
                 <Button date={new Date(2022, 0, 1)} content="New Years Day" clicker={ handleClick } />
                 <Button date={new Date(2022, 1, 14)} content="Valentines Day" clicker={ handleClick } />
             </DateButtonsBox>
+            <Sidebar dates={ dates } clicker={ handleClick } />
         </React.StrictMode>
     )
 }
